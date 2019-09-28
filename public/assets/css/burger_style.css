@@ -1,0 +1,54 @@
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+
+  body{
+    background-image: url("https://i.pinimg.com/474x/e2/53/4a/e2534a341ef8121f1b111ac0db547573--paper-wallpaper-pattern-paper.jpg");
+    background-color: burlywood;
+  }
+
+  h1, h2, h3{
+    padding: 0px;
+    margin: 0px;
+  }
+
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h2, h3{
+  font-family: 'Fjalla One', sans-serif;
+}
+
+  .text{
+    height: auto; 
+    padding: 5px;
+    background-color: burlywood;
+    display: inline-block;
+    overflow: auto;
+  }
+
+img{
+  height: 200px;
+  width: 200px;
+}
+
+li, label, .inputs{
+  font-family: 'Arimo', sans-serif;
+}

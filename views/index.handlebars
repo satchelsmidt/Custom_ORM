@@ -1,0 +1,66 @@
+<div class="text">
+<h1>Burgers.net</h1>
+</div>
+
+<br>
+
+<img src="http://clipart-library.com/data_images/149301.png" alt="this picture has utterly failed to load">
+
+<br>
+<br>
+
+<div class="text">
+<h2>The number one resource for adding burgers to a list of preexisting burgers!</h2>
+</div>
+
+<br>
+<br>
+
+<div class="text">
+<h3>Burgers waiting to be eaten</h3>
+</div>
+
+<br>
+
+<ul>
+    {{#each burgers}}
+    {{#unless devoured}}
+    {{> burgers/burger-block devoured=true}}
+    {{/unless}}
+    {{/each}}
+</ul>
+
+<br>
+
+<div class="text">
+<h3>Burgers that have been eaten</h3>
+</div>
+
+<ul>
+    {{#each burgers}}
+        {{#if devoured}}
+            {{> burgers/burger-block devoured=false}}
+        {{/if}}
+    {{/each}}
+</ul>
+
+<br>
+
+<div class="text">
+<h2>Construct a new Burger!</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="burg">Burger Type:</label>
+    <input type="text" id="burg" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="devoured">Devoured?</label><br>
+    <input class="inputs" type="radio" name="devoured" value="1" checked> Devoured! <br>
+    <input class="inputs" type="radio" name="devoured" value="0"> Uneaten
+  </div>
+
+  <button type="submit">Build Burger</button>
+</form>
+</div>
