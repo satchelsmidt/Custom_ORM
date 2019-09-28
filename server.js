@@ -1,15 +1,15 @@
 //Initial App setup variables
 var express = require('express');
-// var path = require("path")
+var path = require("path")
 var PORT = process.env.PORT || 8080;
 var app = express();
 
 //This line essentially serves up the 'static' content in our public directory with the rest of the app
 //version in 'solved' folder
-// app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 //version in 'unsolved' folder
-app.use(express.static("public"));
+// app.use(express.static("public"));
 
 //parse body of application
 app.use(express.urlencoded({extended: true}));
