@@ -27,3 +27,6 @@ The user can add a burger to either list (which also adds the burger to the MySQ
 * CSS
 * MySQL
 
+### Future Development
+
+* Add footer with copyright + contact info
