@@ -6,6 +6,8 @@ This App allows the user to view all of the 'burgers' available, choose to eat o
 
 This app was built to test skills in following MVC design patterns and using templating engines to render html content. The application uses Node and MySQL to query and route data, and Handlebars to generate HTML. All data is stored in a MySQL database.
 
+Application deployed and hosted on Heroku.
+
 ### Walkthrough
 
 When the application loads, the user will see two lists of burgers: those that have been eaten, and those that are waiting to be eaten. By clicking the button next to each burger name, the user can move burgers from one list to the other, and vice versa.
