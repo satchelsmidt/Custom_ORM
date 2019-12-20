@@ -10,7 +10,7 @@ router.get("/", function(req, res){
         var hbsObject = {
             burgers: data
         };
-        console.log(hbsObject);
+        console.log("THIS IS HBS OBJECT: ", hbsObject);
         res.render("index", hbsObject)
     });
 });
